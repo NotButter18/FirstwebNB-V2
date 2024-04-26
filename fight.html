@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fight?</title>
+</head>
+<body style="background-color: black;">
+    <p style="color: green;">
+        you wanna fight?
+        <br>
+        thats not very nice but if you want to fight then sure im in.
+        <br>
+         let me just find my nuke launch codes...
+        <div class="container"></div>
+        <h2 id="count" style="color: green;">10</h2>
+        </div>
+        <script type="text/javascript">
+            var counter = 10
+
+            setInterval( function(){
+                counter--;
+
+                if( counter >= 0){
+                    id = document.getElementById("count");
+                    id.innerHTML = counter; 
+                }
+
+                if(counter === 0 ){
+                    id.innerHTML = "SENDING NUKE";
+                }
+            }, 1000);
+            setTimeout( function(){
+
+            }, 10000)
+        </script>
+        <img src="huh.png" height="150">
+        <br>
+        <a href="lose.html">
+            <button style="background-color: red; color: white;">yes</button>
+        </a>
+        <a href="win.html">
+            <button style="background-color: red; color: white;">no</button>
+        </a>
+    </p>
+</body>
+</html>
