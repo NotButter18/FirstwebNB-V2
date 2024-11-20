@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+#aboutme{
+    color: blue;
+}
+#title{
+    color: red;
+}
+#link{
+    color: blueviolet;
+    
+}
+#link:hover{
+    color: rgb(187, 126, 245);
+}
