@@ -1,19 +1,138 @@
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  12% {
+    color: #0099ff;
+  }
+  23% {
+    color: cyan;
+  }
+  34% {
+    color: lightgreen;
+  }
+  45% {
+    color: #00ff00;
+  }
+  56% {
+    color: rgb(213, 247, 25);
+  }
+  67% {
+    color: rgb(255, 230, 0);
+  }
+  78% {
+    color: rgb(245, 168, 25);
+  }
+  89% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+
+@keyframes ButtonColorRotate {
+  from {
+    border-color: #6666ff;
+    color: #6666ff;
+  }
+  12% {
+    border-color: #0099ff;
+    color: #0099ff;
+  }
+  23% {
+    border-color: cyan;
+    color: cyan;
+  }
+  34% {
+    border-color: lightgreen;
+    color: lightgreen;
+  }
+  45% {
+    border-color: #00ff00;
+    color: #00ff00;
+  }
+  56% {
+    border-color: rgb(180, 247, 25);
+    color: rgb(180, 247, 25);
+  }
+  67% {
+    border-color: rgb(255, 230, 0);
+    color: rgb(255, 230, 0);
+  }
+  78% {
+    border-color: rgb(245, 168, 25);
+    color: rgb(245, 168, 25);
+  }
+  89% {
+    border-color: #ff3399;
+    color: #ff3399;
+  }
+  100% {
+    border-color: #6666ff;
+    color: #6666ff;
+  }
+}
+
 body{
     background-color: black;
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
+    font-family: monospace;
+    font-size: large;
 }
 #aboutme{
-    color: blue;
+    color: rgb(56, 56, 245);
 }
 #title{
-    color: red;
+    color: rgb(255, 255, 255);
 }
-#link{
-    color: blueviolet;
+
+#shadowBox {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 0px solid;
+  }
+  
+  .rainbow {
+    font-size: 42px;
+    font-family: monospace;
+    letter-spacing: 7px;
+    animation: colorRotate 3.5s linear 0s infinite;
+  }
+  .rainbowbutton {
+    background-color: black;
+    font-size: large;
+    font-family: monospace;
+    letter-spacing: 1px;
+    animation: ButtonColorRotate 4s linear 0s infinite;
+    border: 1px rgb(173, 172, 172) solid;
+    border-radius: 7%;
+  }
+  
+  #link {
+  text-decoration: none;
+  color: #000000;
+  color: #db77fa;
+  -webkit-transition: color .25s linear;
+  transition: color .25s linear;
+  transition: color .15s linear .1;
+  }
+  
+  #link:hover {
+  text-decoration: none;
+  color: #fdfdfd;
+  color: #ebcaf5;
+  -webkit-transition: color .25s linear, color .15s linear .1s;
+  transition: color .25s linear, color .15s linear .1s;
+  }
+  #image {
+    border-radius: 10%;
+    border: 1px rgb(0, 0, 0);
     
-}
-#link:hover{
-    color: rgb(187, 126, 245);
-}
+  }
+  #iframe {
+    border-radius: 2%;
+    border: transparent;
+  }
