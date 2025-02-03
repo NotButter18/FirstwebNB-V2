@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="stylesheet.css">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +12,28 @@
 <h1 class="rainbow">
     hello world!
 </h1>
-<audio autoplay loop>
-    <source src="Villiger_i_wonder_but_dreamy.mp3" />
-</audio>
+
 <body>
     <div class="splash">
         <h1 class="splash-header">Turn up the volume!</h1>
     </div>
     <video src="hawk.mp4" id="background" muted loop autoplay></video> 
+    <iframe src="Villiger_i_wonder_but_dreamy.mp3.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+    </iframe> 
+    <audio autoplay loop id="playAudio">
+        <source src="Villiger_i_wonder_but_dreamy.mp3"/>
+    </audio>
+    <script>
+    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+      if (!isChrome){
+          $('#iframeAudio').remove()
+      }
+      else {
+          $('#playAudio').remove()
+      }
+    </script>
 <br>
+
 <div class="p1" id="box">
     <h2 id="title">About Me</h2>
 <p id="aboutme"><small>I'm </small><big>Nimaan!</big> 
@@ -47,15 +61,23 @@
     <br>
     <a href="hdiw.html"><button class="rainbowbutton">How does It work?</button></a>
     </div>
+    
 </p>
-<h2 id="title">My Links</h2>
+<h2 id="title">
+    My Links
+</h2>
 <h3>
-<a href="https://scratch.mit.edu/users/ONACM-inc/" id="link">My profesional scratch account</a>
-<br>
-<a href="https://scratch.mit.edu/users/gary_says_mowwwww14/" id="link">My personal scratch account</a>
-<br>
+    <a href="https://scratch.mit.edu/users/ONACM-inc/" id="link">
+        My profesional scratch account
+    </a>
+    <br>
+    <a href="https://scratch.mit.edu/users/gary_says_mowwwww14/" id="link">
+        My personal scratch account
+    </a>
+    <br>
 </h3>
 <br>
+
 <div id="box">
 <h2 id="title">Website of the week</h2>
 <iframe src="https://sandspiel.club/" height="400" width="600" id="iframe"></iframe>
@@ -80,6 +102,7 @@
 </p>
 </a>
 </div>
+
 <br>
     <a href="secret.html"> 
         <button name="?" type="button" class="rainbowbutton">
@@ -96,6 +119,7 @@
     <div id="bottombox">
         <small id="bottomtext">last updated: Feb 2, 2025</small>
     </div>
+
 </body>
 
 </html>
