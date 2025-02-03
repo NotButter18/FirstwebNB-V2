@@ -143,6 +143,7 @@ body{
     animation: ButtonColorRotate 4s linear 0s infinite;
     border: 1px rgb(173, 172, 172) solid;
     border-radius: 7%;
+    cursor: pointer;
   }
   
   #link {
@@ -202,7 +203,6 @@ body{
   color: white;
 }
 .splash{
-  cursor : pointer;
   position : fixed;
   top : 0;
   left : 0;
@@ -223,6 +223,25 @@ body{
   color : white;
   font-size : 30px;
   display : flex;
+  justify-content: center;
+  align-items : center;
+}
+#music {
+  visibility: hidden;
+  position: absolute;
+}
+.splash2 {
+  position : fixed;
+  top : 0;
+  left : 0;
+  height : 100%;
+  width : 100%;    
+  background-color: rgba(0,0,0);
+  z-index: 20;
+  align-items: center;
+}
+#splash2button {
+  color : white;
   justify-content: center;
   align-items : center;
 }
