@@ -1,247 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @keyframes colorRotate {
-  from {
-    color: #6666ff;
+    from {
+      background-color: #6666ff;
+    }
+    12% {
+        background-color: #0099ff;
+    }
+    23% {
+        background-color: cyan;
+    }
+    34% {
+        background-color: lightgreen;
+    }
+    45% {
+        background-color: #00ff00;
+    }
+    56% {
+        background-color: rgb(213, 247, 25);
+    }
+    67% {
+        background-color: rgb(255, 230, 0);
+    }
+    78% {
+        background-color: rgb(245, 168, 25);
+    }
+    89% {
+        background-color: #ff3399;
+    }
+    100% {
+        background-color: #6666ff;
+    }
   }
-  12% {
-    color: #0099ff;
-  }
-  23% {
-    color: cyan;
-  }
-  34% {
-    color: lightgreen;
-  }
-  45% {
-    color: #00ff00;
-  }
-  56% {
-    color: rgb(213, 247, 25);
-  }
-  67% {
-    color: rgb(255, 230, 0);
-  }
-  78% {
-    color: rgb(245, 168, 25);
-  }
-  89% {
-    color: #ff3399;
-  }
-  100% {
-    color: #6666ff;
-  }
-}
 
-@keyframes ButtonColorRotate {
-  from {
-    border-color: #6666ff;
-    color: #6666ff;
+  @keyframes colorRotate2 {
+    from {
+      color: #6666ff;
+    }
+    12% {
+        color: #0099ff;
+    }
+    23% {
+        color: cyan;
+    }
+    34% {
+        color: lightgreen;
+    }
+    45% {
+        color: #00ff00;
+    }
+    56% {
+        color: rgb(213, 247, 25);
+    }
+    67% {
+        color: rgb(255, 230, 0);
+    }
+    78% {
+        color: rgb(245, 168, 25);
+    }
+    89% {
+        color: #ff3399;
+    }
+    100% {
+        color: #6666ff;
+    }
   }
-  12% {
-    border-color: #0099ff;
-    color: #0099ff;
-  }
-  23% {
-    border-color: cyan;
-    color: cyan;
-  }
-  34% {
-    border-color: lightgreen;
-    color: lightgreen;
-  }
-  45% {
-    border-color: #00ff00;
-    color: #00ff00;
-  }
-  56% {
-    border-color: rgb(180, 247, 25);
-    color: rgb(180, 247, 25);
-  }
-  67% {
-    border-color: rgb(255, 230, 0);
-    color: rgb(255, 230, 0);
-  }
-  78% {
-    border-color: rgb(245, 168, 25);
-    color: rgb(245, 168, 25);
-  }
-  89% {
-    border-color: #ff3399;
-    color: #ff3399;
-  }
-  100% {
-    border-color: #6666ff;
-    color: #6666ff;
-  }
-}
-@keyframes fade-out {
-  from {
-    opacity: 1;
-    z-index: 10;
-  }
-  12% {
-    opacity: .88;
-  }
-  23% {
-      opacity: .77;
-  }
-  34% {
-    opacity: .66;
-  }
-  45% {
-    opacity: .55;
-  }
-  56% {
-    opacity: .44;
-  }
-  67% {
-    opacity: .33;
-  }
-  78% {
-    opacity: .22;
-  }
-  89% {
-    opacity: .11;
-  }
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
-}
-
-body{
-    background-color: rgba(0,0,0,0.7);
-    margin-left: 10px;
-    margin-right: 10px;
+  
+html {
+    background-color: rgb(226, 228, 213);
     text-align: center;
-    font-family: monospace;
-    font-size: large;
-    z-index: 4;
 }
-#aboutme{
-    color: rgb(56, 56, 245);
+
+.title {
+    font-family: "Montserrat";
+    font-size: 25px;
+    text-align: center;
+    color: rgb(25, 43, 51);
 }
-#title{
-    color: rgb(255, 255, 255);
+
+.desc {
+    font-family: "Montserrat";
+    background-color: rgb(233, 216, 180);
+    width: 1000;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 100;
+    padding: 15px;
 }
-#shadowBox {
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 0px solid;
-  }
-  
-  .rainbow {
-    font-size: 42px;
-    font-family: monospace;
-    letter-spacing: 7px;
-    animation: colorRotate 3.5s linear 0s infinite;
-  }
-  .rainbowbutton {
-    background-color: black;
-    font-size: large;
-    font-family: monospace;
-    letter-spacing: 1px;
-    animation: ButtonColorRotate 4s linear 0s infinite;
-    border: 1px rgb(173, 172, 172) solid;
-    border-radius: 7%;
-    cursor: pointer;
-  }
-  
-  #link {
-  text-decoration: none;
-  color: #000000;
-  color: #db77fa;
-  -webkit-transition: color .25s linear;
-  transition: color .25s linear;
-  transition: color .15s linear .1;
-  }
-  
-  #link:hover {
-  text-decoration: none;
-  color: #fdfdfd;
-  color: #ebcaf5;
-  -webkit-transition: color .25s linear, color .15s linear .1s;
-  transition: color .25s linear, color .15s linear .1s;
-  }
-  #image {
-    border-radius: 10%;
-    border: 1px rgb(0, 0, 0);
+
+.button {
+    background-color: rgb(241, 171, 90);
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    font-family: "Montserrat";
+    align-items: center;
+    margin: 5px;
     
-  }
-  #iframe {
-    border-radius: 2%;
-    border: transparent;
-  }
-  #background{
-    position: fixed;
-    top: 0;
-    left: 0;
+}
+
+.matrixbutton {
+    color: #00ff00;
+    background-color: rgb(0, 0, 0);
+    border-color: #0f0;
+    border-radius: 10px;
+    font-family: "Montserrat";
+    align-items: center;
+    z-index: 10;
+    bottom: 10%;
+}
+
+.matrixbutton:hover {
+    border-color: rgba(0, 247, 0, 0.7);
+    background-color: rgb(0, 0, 0)
+    
+}
+
+.matrixtext {
+    color: #0f0;
+    font-family: "Montserrat";
+    align-items: center;
+    margin: 5px;
+    
+}
+
+.sillybutton {
+    background-color: rgb(241, 171, 90);
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    font-family: "Montserrat";
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.sillybutton:hover {
+    animation: colorRotate 4s linear 0s infinite;
+    border-color: rgba(0, 0, 0, .7);
+
+}
+
+.button:hover {
+    border-color: rgba(0, 0, 0, .7);
+    background-color: rgb(218, 140, 52);
+}
+
+.p1 {
+    font-weight: 450;
+    font-size: large;
+}
+
+#bigtext {
+    font-size: 45px;
+    padding: 25px;
+}
+
+.rainbow {
+    animation: colorRotate2 4s linear 0s infinite;
+}
+.whitetext {
+    color: white;
+}
+#homematrixbutton:hover {
+    border-color: #0f0;
+    background-color: rgb(0, 0, 0);
+    color: #0f0;
+}
+
+#homematrixbutton {
+    background-color: rgb(241, 171, 90);
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    font-family: "Montserrat";
+    align-items: center;
+    margin: 5px;
+}
+
+.image {
+    height: 35%;
+    width: 40%;
+}
+
+.rngimage {
+    height: 30%;
+    width: 40%;
+}
+
+#colourhexagon {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    opacity: 0,0;
-    z-index: -1;
-    background-attachment: fixed;
-  }
-  #box {
-    padding: 10px;
-    z-index: 1;
-    backdrop-filter: blur(7px);
-    border-radius: 4%;
-    margin-left: 30%;
-    margin-right: 30%;
-  }
+}
 
-#bottombox {
-  margin-left: 40%;
-  margin-right: 40%;
-  padding: 7px;
-  background-color: rgba( 0, 0, 0, .6);
-  z-index: 4;
-  border-radius: 4%;
+.intro {
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.96);
+    transition: 1s;
+    cursor: wait;
 }
-#bottomtext {
-  color: white;
+
+.introtitle {
+    font-family: "Montserrat";
+    font-size: 25px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: absolute; 
+    top: 43%;
+    left: 0; 
+    right: 0; 
+    margin-inline: auto; 
+    width: fit-content;
+    z-index: 10;
+
 }
-.splash{
-  position : fixed;
-  top : 0;
-  left : 0;
-  height : 100%;
-  width : 100%;    
-  background-color: rgba(0,0,0, 0.8);
-  z-index: 10;
-  animation: fade-out 3s;
-  opacity: 0;
-  z-index: -10;
-}
-.hidden{
-  transition : 0.5s;
-  display : none;
-}
-.splash-header {
-  height : 90%;
-  color : white;
-  font-size : 30px;
-  display : flex;
-  justify-content: center;
-  align-items : center;
-}
-#music {
-  visibility: hidden;
-  position: absolute;
-}
-.splash2 {
-  position : fixed;
-  top : 0;
-  left : 0;
-  height : 100%;
-  width : 100%;    
-  background-color: rgba(0,0,0);
-  z-index: 20;
-  align-items: center;
-}
-#splash2button {
-  color : white;
-  justify-content: center;
-  align-items : center;
+
+.introp {
+    font-weight: 450;
+    font-size: large;
+    font-family: "Montserrat";
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: absolute; 
+    top: 46%;
+    left: 0; 
+    right: 0; 
+    margin-inline: auto; 
+    width: fit-content;
+    z-index: 10;
 }
