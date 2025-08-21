@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @keyframes colorRotate {
   from {
     color: #6666ff;
@@ -135,6 +138,11 @@ body{
     letter-spacing: 7px;
     animation: colorRotate 3.5s linear 0s infinite;
   }
+  .smallrainbow {
+    font-family: monospace;
+    letter-spacing: 2px;
+    animation: colorRotate 3.5s linear 0s infinite;
+  }
   .rainbowbutton {
     background-color: black;
     font-size: large;
@@ -165,11 +173,14 @@ body{
   #image {
     border-radius: 10%;
     border: 1px rgb(0, 0, 0);
-    
+    height: 21vh;
+    margin-bottom: 1vh;
   }
   #iframe {
     border-radius: 2%;
     border: transparent;
+    height: 40vh;
+    width: 60vh;
   }
   #background{
     position: fixed;
@@ -185,10 +196,10 @@ body{
   #box {
     padding: 10px;
     z-index: 1;
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(9px);
     border-radius: 4%;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 
 #bottombox {
@@ -199,51 +210,19 @@ body{
   z-index: 4;
   border-radius: 4%;
 }
+
 #bottomtext {
   color: white;
 }
-.splash{
-  position : fixed;
-  top : 0;
-  left : 0;
-  height : 100%;
-  width : 100%;    
-  background-color: rgba(0,0,0, 0.8);
-  z-index: 10;
-  animation: fade-out 3s;
-  opacity: 0;
-  z-index: -10;
-}
+
 .hidden{
   transition : 0.5s;
   display : none;
 }
-.splash-header {
-  height : 90%;
-  color : white;
-  font-size : 30px;
-  display : flex;
-  justify-content: center;
-  align-items : center;
-}
+
 #music {
   visibility: hidden;
   position: absolute;
-}
-.splash2 {
-  position : fixed;
-  top : 0;
-  left : 0;
-  height : 100%;
-  width : 100%;    
-  background-color: rgba(0,0,0);
-  z-index: 20;
-  align-items: center;
-}
-#splash2button {
-  color : white;
-  justify-content: center;
-  align-items : center;
 }
 
 @keyframes flicker {
@@ -343,7 +322,95 @@ body{
   margin: 0;
 }
 #game {
-  border-radius: 7%;
+  margin: 10px;
+  border-radius: 5%;
   border: 1px rgb(0, 0, 0);
-  height: 200px;
+  height: 21vh;
+}
+
+.intro {
+    position: fixed;
+    top: 0vh;
+    left: 0vh;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.96);
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+.introtitle {
+    font-family: "Montserrat";
+    font-size: 25px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: absolute; 
+    top: 43%;
+    left: 0; 
+    right: 0; 
+    margin-inline: auto; 
+    width: fit-content;
+    z-index: 10;
+
+}
+
+.introp {
+    font-weight: 450;
+    font-size: large;
+    font-family: "Montserrat";
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: absolute; 
+    top: 48%;
+    left: 0; 
+    right: 0; 
+    margin-inline: auto; 
+    width: fit-content;
+    z-index: 10;
+}
+
+.introtitle span {
+  display: inline-block;
+  animation: wave 2s ease-in-out infinite;
+  text-shadow: 0 0 7px rgb(255, 255, 255);
+  /* animation: glow 1s ease-in-out infinite alternate; */
+}
+
+.introtitle span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.introtitle span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.introtitle span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.introtitle span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.introtitle span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+@keyframes wave {
+  0% ,100% {
+
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1vh);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+  }
+  to {
+   text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255), 0 0 40px rgb(255, 255, 255);
+  }
 }
