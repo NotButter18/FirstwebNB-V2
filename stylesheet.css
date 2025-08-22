@@ -414,3 +414,27 @@ body{
    text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255), 0 0 40px rgb(255, 255, 255);
   }
 }
+
+.mute {
+    transition: 0.2s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 5px;
+    background-attachment: fixed;
+    padding: 10px;
+    z-index: 0;
+    backdrop-filter: blur(18px);
+    border-radius: 4%;
+    width: fit-content;
+    font-size: 15px;
+}
+
+.mute:hover {
+  font-size: 16px;
+}
+
+.mute:active {
+  transition: 0s;
+  font-size: 14px;
+}
