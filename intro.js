@@ -1,5 +1,7 @@
 var intro = document.querySelector(".intro")
 var header = document.getElementById("sigma")
+var audio = document.getElementById('music');
+var mutetxt = document.getElementById("mutetxt")
 var counter = 0
 var cyclecount = 0
 var muted = false
@@ -15,16 +17,17 @@ function check() {
 
 function introclick() {
     cyclecount = 2
-    var audio = document.getElementById('music');
     audio.play();
 }
 
-function mute() {
+function mutebtn() {
     if (muted == false) {
         audio.pause();
         muted = true;
+        mutetxt.textContent = "muted"
     } else {
         audio.play();
         muted = false;
+        mutetxt.textContent = "mute?"
     }
 }
